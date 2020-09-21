@@ -49,12 +49,14 @@ public class AVLTree extends BinarySearchTree {
                                     RightRotate(z);
                                 } else {
                                     //Left right
-                                    LeftRightRotate(z);
+                                    LeftRotate(y);
+                                    RightRotate(z);
                                 }
                             } else {
                                 if ( x == y.left) {
                                     //Right left
-                                    RightLeftRotate(z);
+                                    RightRotate(y);
+                                    LeftRotate(z);
                                 } else {
                                     //Right right
                                     LeftRotate(z);

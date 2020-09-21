@@ -150,7 +150,7 @@ public class ArrayUtils {
         Random r = new Random();
 
         for (int i = 0; i < length; i++) {
-            arr[i] = r.nextInt(100);
+            arr[i] = r.nextInt();
         }
 
         return arr;

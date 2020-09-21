@@ -13,7 +13,7 @@ public class Main {
 
         System.out.println("###########################################################################");
 
-        BinaryTreeTesting.TestBinaryTree(new BinarySearchTree(), test);
+        BinaryTreeTesting.TestBinaryTree(new AVLTree(), test);
 
     }
 }

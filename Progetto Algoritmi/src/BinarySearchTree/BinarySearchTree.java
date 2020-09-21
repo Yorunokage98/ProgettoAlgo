@@ -26,7 +26,7 @@ public class BinarySearchTree implements IBinaryTree {
 
     public Node search(Node root, int nodeKey) {
 
-        if (root == null) return root;
+        if (root == null) return null;
 
         if (root.key() == nodeKey) return root;
 
@@ -58,7 +58,7 @@ public class BinarySearchTree implements IBinaryTree {
 
     public void RightLeftRotate(Node root) {
 
-        RightRotate(root.left);
+        RightRotate(root.right);
         LeftRotate(root);
 
     }
@@ -74,7 +74,9 @@ public class BinarySearchTree implements IBinaryTree {
 
         Node parent = root.parent;
         Node newRoot = root.left;
-        if (newRoot == null) return;
+        if (newRoot == null) {
+            System.out.println("Was null");
+        };
         Node ball = newRoot.right;
 
         if (parent != null) {
@@ -101,7 +103,9 @@ public class BinarySearchTree implements IBinaryTree {
 
         Node parent = root.parent;
         Node newRoot = root.right;
-        if (newRoot == null) return;
+        if (newRoot == null) {
+            System.out.println("Was null");
+        };
         Node ball = newRoot.left;
 
         if (parent != null) {
@@ -135,6 +139,14 @@ public class BinarySearchTree implements IBinaryTree {
     public int Balance(Node root) {
 
         return Height(root.right) - Height(root.left);
+
+    }
+
+    public int Size(Node root) {
+
+        if (root == null) return 0;
+
+        return Size(root.left) + Size(root.right) + 1;
 
     }
 
