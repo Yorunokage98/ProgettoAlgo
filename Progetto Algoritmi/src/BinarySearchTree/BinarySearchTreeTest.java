@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import sun.security.ssl.Debug;
 
 import java.util.Random;
 import java.util.Stack;
@@ -37,6 +38,8 @@ public class BinarySearchTreeTest {
             nodes[i] = new Node(randomKeys[i], randomValues[i]);
             bst.insert(root, nodes[i]);
         }
+
+        nodes = bst.GetNodes(bst.FindRoot(root));
     }
 
     @After
@@ -58,6 +61,16 @@ public class BinarySearchTreeTest {
                 inspecting.push(parent.right);
                 Assert.assertTrue(parent.key() <= parent.right.key());
             }
+        }
+
+    }
+
+    @After
+    public void insureReciprocity() {
+
+        for (int i = 0; i < nodes.length; i++) {
+            if (nodes[i].left != null) Assert.assertEquals(nodes[i], nodes[i].left.parent);
+            if (nodes[i].right != null) Assert.assertEquals(nodes[i], nodes[i].right.parent);
         }
 
     }
@@ -117,14 +130,15 @@ public class BinarySearchTreeTest {
 
     }
 
-    //Only tests if the rotates cancel each other out
+
     @Test
     public void rotate() {
 
         for (int i = 0; i < nodes.length; i++) {
 
-            bst.RightRotate(nodes[i]);
-            bst.LeftRotate(nodes[i]);
+            if(nodes[i].left != null) bst.RightRotate(nodes[i]);
+
+            if(nodes[i].right != null) bst.LeftRotate(nodes[i]);
 
         }
 

@@ -37,13 +37,16 @@ public class AVLTreeTest {
             nodes[i] = new Node(randomKeys[i], randomValues[i]);
             Assert.assertNotNull(root);
             avl.insert(root, nodes[i]);
+            root = avl.FindRoot(root);
         }
 
         root = avl.FindRoot(root);
+
+        Assert.assertEquals(nodes.length, avl.Size(root));
     }
 
     @After
-    public void insureInvariant() throws Exception {
+    public void insureInvariant() {
 
         root = avl.FindRoot(root);
 
@@ -71,6 +74,16 @@ public class AVLTreeTest {
 
     }
 
+    @After
+    public void insureReciprocity() {
+
+        for (int i = 0; i < nodes.length; i++) {
+            if (nodes[i].left != null) Assert.assertEquals(nodes[i], nodes[i].left.parent);
+            if (nodes[i].right != null) Assert.assertEquals(nodes[i], nodes[i].right.parent);
+        }
+
+    }
+
     @Test
     public void insert() {
 
@@ -84,9 +97,11 @@ public class AVLTreeTest {
 
             avl.insert(root, newNodes[i]);
 
-        }
+            root = avl.FindRoot(root);
 
-        Assert.assertEquals(newNodes.length + nodes.length, avl.Size(root));
+            Assert.assertEquals(i + nodes.length + 1, avl.Size(root));
+
+        }
 
         for (int i = 0; i < newNodes.length; i++) {
 
@@ -121,9 +136,54 @@ public class AVLTreeTest {
             bst.insert(root, newNodes[i]);
             avl.insureBalance(newNodes[i]);
 
+            root = avl.FindRoot(root);
+
             for (int j = 0; j < nodes.length; j++) {
                 Assert.assertTrue(Math.abs(avl.Balance(nodes[j])) <= 1);
             }
+
+        }
+
+    }
+
+    @Test
+    public void testTree() {
+
+        for(int j = 0; j < 500; j++) {
+
+            int[] keys = ArrayUtils.RandomArray(100);
+
+            Node newRoot = new Node(keys[0], "" + keys[0]);
+
+            for (int i = 1; i < keys.length; i++) {
+
+                Node newNode = new Node(keys[i], "" + keys[i]);
+
+                avl.insert(newRoot, newNode);
+
+                newRoot = avl.FindRoot(newRoot);
+
+                if (newNode.parent != null) {
+
+                    if (newNode.key() > newNode.parent.key()) {
+                        Assert.assertEquals(newNode, newNode.parent.right);
+                    } else {
+                        Assert.assertEquals(newNode, newNode.parent.left);
+                    }
+
+                }
+
+            }
+
+            int[] reconstruction = new int[keys.length];
+
+            for (int i = 0; i < keys.length; i++) {
+
+                reconstruction[i] = avl.search(newRoot, keys[i]).key();
+
+            }
+
+            Assert.assertArrayEquals(keys, reconstruction);
 
         }
 

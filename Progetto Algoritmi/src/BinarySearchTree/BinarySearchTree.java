@@ -1,5 +1,9 @@
 package BinarySearchTree;
 
+import org.junit.Assert;
+
+import java.util.Stack;
+
 public class BinarySearchTree implements IBinaryTree {
 
     public void insert(Node root, Node newNode) {
@@ -147,6 +151,37 @@ public class BinarySearchTree implements IBinaryTree {
         if (root == null) return 0;
 
         return Size(root.left) + Size(root.right) + 1;
+
+    }
+
+    public Node[] GetNodes(Node root) {
+
+        Node[] nodes = new Node[Size(root)];
+
+        int index = 0;
+
+        Stack<Node> inspecting = new Stack<Node>();
+        inspecting.push(root);
+        nodes[index] = root;
+        index++;
+
+        while (!inspecting.empty()) {
+            Node parent = inspecting.pop();
+
+            if (parent.left != null) {
+                inspecting.push(parent.left);
+                nodes[index] = parent.left;
+                index++;
+            }
+
+            if (parent.right != null) {
+                inspecting.push(parent.right);
+                nodes[index] = parent.right;
+                index++;
+            }
+        }
+
+        return nodes;
 
     }
 

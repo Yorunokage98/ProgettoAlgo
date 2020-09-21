@@ -1,26 +1,12 @@
 package BinarySearchTree;
 
+import org.junit.Assert;
+
 public class AVLTree extends BinarySearchTree {
 
     public void insert(Node root, Node newNode) {
 
-        if (newNode.key() >= root.key()) {
-            if (root.right == null) {
-                root.right = newNode;
-                newNode.parent = root;
-            } else {
-                insert(root.right, newNode);
-                return;
-            }
-        } else {
-            if (root.left == null) {
-                root.left = newNode;
-                newNode.parent = root;
-            } else {
-                insert(root.left, newNode);
-                return;
-            }
-        }
+        super.insert(root, newNode);
 
         insureBalance(newNode);
 
@@ -37,8 +23,6 @@ public class AVLTree extends BinarySearchTree {
                 z = y.parent;
                 if (z != null) {
 
-                    do {
-
                         int balance = Balance(z);
                         //If unbalanced
                         if (Math.abs(balance) > 1) {
@@ -48,6 +32,7 @@ public class AVLTree extends BinarySearchTree {
                                     //Left left
                                     RightRotate(z);
                                 } else {
+                                    Assert.assertEquals(x, y.right);
                                     //Left right
                                     LeftRotate(y);
                                     RightRotate(z);
@@ -55,9 +40,12 @@ public class AVLTree extends BinarySearchTree {
                             } else {
                                 if ( x == y.left) {
                                     //Right left
+                                    Assert.assertEquals(y, z.right);
                                     RightRotate(y);
                                     LeftRotate(z);
                                 } else {
+                                    Assert.assertEquals(y, z.right);
+                                    Assert.assertEquals(x, y.right);
                                     //Right right
                                     LeftRotate(z);
                                 }
@@ -65,13 +53,7 @@ public class AVLTree extends BinarySearchTree {
 
                         }
 
-                        if (z.parent != null) {
-                            x = y;
-                            y = z;
-                            z = z.parent;
-                        }
-
-                    } while (z.parent != null);
+                        insureBalance(y);
 
                 }
             }

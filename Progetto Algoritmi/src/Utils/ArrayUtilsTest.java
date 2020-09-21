@@ -30,6 +30,7 @@ public class ArrayUtilsTest {
         Random r = new Random();
 
         int e = r.nextInt(arr.length);
+        if (e == 0) e = 1;
         int s = r.nextInt(e);
 
         ArrayUtils.Sort(arr, s, e);
@@ -48,6 +49,7 @@ public class ArrayUtilsTest {
 
         Random r = new Random();
         int e = r.nextInt(arr.length);
+        if (e == 0) e = 1;
         int s = r.nextInt(e);
 
         ArrayUtils.ShiftArrayRight(copy, s, e);
@@ -66,6 +68,7 @@ public class ArrayUtilsTest {
 
         Random r = new Random();
         int e = r.nextInt(arr.length);
+        if (e == 0) e = 1;
         int s = r.nextInt(e);
 
         ArrayUtils.ShiftArrayLeft(arr, s, e);
@@ -84,6 +87,7 @@ public class ArrayUtilsTest {
 
         Random r = new Random();
         int e = r.nextInt(arr.length);
+        if (e == 0) e = 1;
         int s = r.nextInt(e);
 
         ArrayUtils.InPlaceSwap(arr, s, e);
@@ -100,6 +104,7 @@ public class ArrayUtilsTest {
 
         Random r = new Random();
         int e = r.nextInt(arr.length);
+        if (e == 0) e = 1;
         int s = r.nextInt(e);
 
         ArrayUtils.Swap(arr, s, e);
@@ -111,17 +116,22 @@ public class ArrayUtilsTest {
     @org.junit.Test
     public void mergeSort() {
 
-        int[] arr = ArrayUtils.RandomArray(100);
+        for (int j = 0; j < 500; j++) {
 
-        Random r = new Random();
+            int[] arr = ArrayUtils.RandomArray(100);
 
-        int e = r.nextInt(arr.length);
-        int s = r.nextInt(e);
+            Random r = new Random();
 
-        ArrayUtils.MergeSort(arr, s, e);
+            int e = r.nextInt(arr.length);
+            if (e == 0) e = 1;
+            int s = r.nextInt(e);
 
-        for (int i = s; i < e - 1; i++) {
-            Assert.assertTrue(arr[i] <= arr[i+1]);
+            ArrayUtils.MergeSort(arr, s, e);
+
+            for (int i = s; i < e - 1; i++) {
+                Assert.assertTrue(arr[i] + " is greater than " + arr[i + 1], arr[i] <= arr[i + 1]);
+            }
+
         }
 
     }
