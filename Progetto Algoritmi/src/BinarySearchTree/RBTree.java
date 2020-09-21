@@ -1,26 +1,12 @@
 package BinarySearchTree;
 
+import org.junit.Assert;
+
 public class RBTree extends BinarySearchTree {
 
     public void insert(Node root, Node newNode) {
 
-        if (newNode.key() >= root.key()) {
-            if (root.right == null) {
-                root.right = newNode;
-                newNode.parent = root;
-            } else {
-                insert(root.right, newNode);
-                return;
-            }
-        } else {
-            if (root.left == null) {
-                root.left = newNode;
-                newNode.parent = root;
-            } else {
-                insert(root.left, newNode);
-                return;
-            }
-        }
+        super.insert(root, newNode);
 
         newNode.isRed = true;
 
@@ -30,11 +16,13 @@ public class RBTree extends BinarySearchTree {
 
     public void insureInvariant(Node newNode) {
 
-        if (newNode.parent == null) return;
+        if (newNode.parent != null) {
 
-        if (newNode.parent.isRed && newNode.isRed) {
+            if (newNode.parent.isRed) {
 
-            RBTreeFixUp(newNode);
+                RBTreeFixUp(newNode);
+
+            }
 
         }
 
@@ -46,42 +34,47 @@ public class RBTree extends BinarySearchTree {
     public void RBTreeFixUp(Node newNode) {
 
         Node parent = newNode.parent;
-        Node granpa = parent.parent;
-        if (granpa == null) return;
+        Node grandpa = parent.parent;
+        if (grandpa == null) return;
         Node uncle;
-        if (parent == granpa.right) {
-            uncle = granpa.left;
+        if (parent == grandpa.right) {
+            uncle = grandpa.left;
         } else {
-            uncle = granpa.right;
+            Assert.assertEquals(parent, grandpa.left);
+            uncle = grandpa.right;
         }
 
 
         if (uncle == null || !uncle.isRed) {
 
-            if (parent == granpa.left) {
+            if (parent == grandpa.left) {
                 //Left case
 
                 if (newNode == parent.left) {
-                    RightRotate(granpa);
+                    RightRotate(grandpa);
                     parent.isRed = false;
-                    granpa.isRed = true;
+                    grandpa.isRed = true;
                 } else {
-                    LeftRightRotate(granpa);
-                    parent.isRed = false;
-                    granpa.isRed = true;
+                    LeftRotate(parent);
+                    RightRotate(grandpa);
+                    //insureInvariant(parent);
+                    newNode.isRed = false;
+                    grandpa.isRed = true;
                 }
 
             } else {
                 //Right case
 
                 if (newNode == parent.right) {
-                    LeftRotate(granpa);
+                    LeftRotate(grandpa);
                     parent.isRed = false;
-                    granpa.isRed = true;
+                    grandpa.isRed = true;
                 } else {
-                    RightLeftRotate(granpa);
-                    parent.isRed = false;
-                    granpa.isRed = true;
+                    RightRotate(parent);
+                    LeftRotate(grandpa);
+                    //insureInvariant(parent);
+                    newNode.isRed = false;
+                    grandpa.isRed = true;
                 }
 
             }
@@ -90,8 +83,8 @@ public class RBTree extends BinarySearchTree {
 
             parent.isRed = false;
             uncle.isRed = false;
-            granpa.isRed = true;
-            insureInvariant(granpa);
+            grandpa.isRed = true;
+            insureInvariant(grandpa);
 
         }
 

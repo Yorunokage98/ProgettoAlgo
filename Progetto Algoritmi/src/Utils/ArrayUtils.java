@@ -151,6 +151,12 @@ public class ArrayUtils {
 
         for (int i = 0; i < length; i++) {
             arr[i] = r.nextInt();
+            for (int j = 0; j < length; j++) {
+                if (arr[i] == arr[j] && i != j) {
+                    i--;
+                    continue;
+                }
+            }
         }
 
         return arr;

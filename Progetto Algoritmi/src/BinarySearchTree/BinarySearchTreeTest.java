@@ -165,4 +165,47 @@ public class BinarySearchTreeTest {
         }
 
     }
+
+    @Test
+    public void testTree() {
+
+        for(int j = 0; j < 500; j++) {
+
+            int[] keys = ArrayUtils.RandomArray(100);
+
+            Node newRoot = new Node(keys[0], "" + keys[0]);
+
+            for (int i = 1; i < keys.length; i++) {
+
+                Node newNode = new Node(keys[i], "" + keys[i]);
+
+                bst.insert(newRoot, newNode);
+
+                newRoot = bst.FindRoot(newRoot);
+
+                if (newNode.parent != null) {
+
+                    if (newNode.key() > newNode.parent.key()) {
+                        Assert.assertEquals(newNode, newNode.parent.right);
+                    } else {
+                        Assert.assertEquals(newNode, newNode.parent.left);
+                    }
+
+                }
+
+            }
+
+            int[] reconstruction = new int[keys.length];
+
+            for (int i = 0; i < keys.length; i++) {
+
+                reconstruction[i] = bst.search(newRoot, keys[i]).key();
+
+            }
+
+            Assert.assertArrayEquals(keys, reconstruction);
+
+        }
+
+    }
 }

@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Progetto_Algoritmi$All_in_Progetto_Algoritmi.ic" NAME="All in Progetto Algoritmi Coverage Results" MODIFIED="1600696016312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Progetto_Algoritmi$All_in_Progetto_Algoritmi.ic" NAME="All in Progetto Algoritmi Coverage Results" MODIFIED="1600698649339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Progetto_Algoritmi$Utils_in_Progetto_Algoritmi.ic" NAME="Utils in Progetto Algoritmi Coverage Results" MODIFIED="1600681971158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Utils.*</FILTER>
     </SUITE>
@@ -22,7 +22,7 @@
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="201" />
+    <option name="myElementSize" value="191" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="206688620">
@@ -64,22 +64,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="java" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3440" />
+          <entry key="java" value="4192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3440" />
+          <entry key="JAVA" value="4192" />
         </counts>
       </usages-collector>
     </session>
@@ -87,22 +87,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
+            <state relative-caret-position="196">
+              <caret line="146" column="32" selection-start-line="146" selection-start-column="32" selection-end-line="146" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -110,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="935">
               <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
             </state>
           </provider>
@@ -119,20 +107,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
+            <state relative-caret-position="374">
+              <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
               <folding>
                 <element signature="e#975#981#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/IBinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -150,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1487">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state relative-caret-position="352">
+              <caret line="153" column="46" lean-forward="true" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,11 +141,29 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/RBTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/RBTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="112" selection-start-line="112" selection-end-line="112" />
+            <state relative-caret-position="34">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3299#3305#0" expanded="true" />
@@ -178,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinaryTreeTesting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+            <state relative-caret-position="204">
+              <caret line="13" selection-start-line="6" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -187,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTreeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+            <state relative-caret-position="519">
+              <caret line="209" column="5" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="209" selection-end-column="5" />
               <folding>
                 <element signature="e#1146#1152#0" expanded="true" />
               </folding>
@@ -219,17 +216,18 @@
         <option value="$PROJECT_DIR$/src/BinarySearchTree/Node.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/IBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/BinaryTreeTesting.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree/RBTree.java" />
         <option value="$PROJECT_DIR$/src/Selection/HeapSelection.java" />
         <option value="$PROJECT_DIR$/src/Selection/QuickSelection.java" />
         <option value="$PROJECT_DIR$/src/Selection/MOMPivotCalculator.java" />
-        <option value="$PROJECT_DIR$/src/Utils/ArrayUtils.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTreeTest.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/AVLTree.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree/AVLTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/RBTree.java" />
+        <option value="$PROJECT_DIR$/src/Utils/ArrayUtils.java" />
         <option value="$PROJECT_DIR$/src/Utils/ArrayUtilsTest.java" />
+        <option value="$PROJECT_DIR$/src/BinarySearchTree/RBTreeTest.java" />
       </list>
     </option>
   </component>
@@ -293,7 +291,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600696302235" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600700707258" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -301,8 +299,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="BinarySearchTree" />
       <recent name="Utils" />
+      <recent name="BinarySearchTree" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -320,32 +318,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Progetto Algoritmi">
-    <configuration name="AVLTreeTest.insureBalance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Progetto Algoritmi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BinarySearchTree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BinarySearchTree" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.AVLTreeTest" />
-      <option name="METHOD_NAME" value="insureBalance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Progetto Algoritmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Progetto Algoritmi" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArrayUtilsTest.mergeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RBTreeTest.testTree">
+    <configuration name="ArrayUtilsTest.randomArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Progetto Algoritmi" />
       <extension name="coverage">
         <pattern>
@@ -355,13 +329,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Utils" />
       <option name="MAIN_CLASS_NAME" value="Utils.ArrayUtilsTest" />
-      <option name="METHOD_NAME" value="mergeSort" />
+      <option name="METHOD_NAME" value="randomArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTree in Progetto Algoritmi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RBTreeTest.RBTreeFixUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Progetto Algoritmi" />
       <extension name="coverage">
         <pattern>
@@ -370,12 +344,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BinarySearchTree" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.RBTreeTest" />
+      <option name="METHOD_NAME" value="RBTreeFixUp" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTreeTest.rotate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RBTreeTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Progetto Algoritmi" />
       <extension name="coverage">
         <pattern>
@@ -384,27 +360,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="BinarySearchTree" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.BinarySearchTreeTest" />
-      <option name="METHOD_NAME" value="rotate" />
+      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.RBTreeTest" />
+      <option name="METHOD_NAME" value="insert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.insureInvariant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto Algoritmi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BinarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BinarySearchTree" />
+      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.RBTreeTest" />
+      <option name="METHOD_NAME" value="insureInvariant" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RBTreeTest.testTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto Algoritmi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BinarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BinarySearchTree" />
+      <option name="MAIN_CLASS_NAME" value="BinarySearchTree.RBTreeTest" />
+      <option name="METHOD_NAME" value="testTree" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AVLTreeTest.insureBalance" />
-      <item itemvalue="JUnit.BinarySearchTreeTest.rotate" />
-      <item itemvalue="JUnit.BinarySearchTree in Progetto Algoritmi" />
-      <item itemvalue="JUnit.All in Progetto Algoritmi" />
-      <item itemvalue="JUnit.ArrayUtilsTest.mergeSort" />
+      <item itemvalue="JUnit.RBTreeTest.insert" />
+      <item itemvalue="JUnit.RBTreeTest.testTree" />
+      <item itemvalue="JUnit.RBTreeTest.RBTreeFixUp" />
+      <item itemvalue="JUnit.RBTreeTest.insureInvariant" />
+      <item itemvalue="JUnit.ArrayUtilsTest.randomArray" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Progetto Algoritmi" />
-        <item itemvalue="JUnit.ArrayUtilsTest.mergeSort" />
-        <item itemvalue="JUnit.AVLTreeTest.insureBalance" />
-        <item itemvalue="JUnit.BinarySearchTreeTest.rotate" />
-        <item itemvalue="JUnit.BinarySearchTree in Progetto Algoritmi" />
+        <item itemvalue="JUnit.RBTreeTest.testTree" />
+        <item itemvalue="JUnit.RBTreeTest.insert" />
+        <item itemvalue="JUnit.ArrayUtilsTest.randomArray" />
+        <item itemvalue="JUnit.RBTreeTest.insureInvariant" />
+        <item itemvalue="JUnit.RBTreeTest.RBTreeFixUp" />
       </list>
     </recent_temporary>
   </component>
@@ -422,42 +430,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Progetto_Algoritmi - 2020.09.21 at 15h 46m 58s.xml">
-      <configuration name="All in Progetto Algoritmi" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 53m 32s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Progetto_Algoritmi - 2020.09.21 at 15h 47m 29s.xml">
-      <configuration name="All in Progetto Algoritmi" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 53m 45s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Progetto_Algoritmi - 2020.09.21 at 15h 47m 34s.xml">
-      <configuration name="All in Progetto Algoritmi" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 55m 28s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Progetto_Algoritmi - 2020.09.21 at 15h 47m 36s.xml">
-      <configuration name="All in Progetto Algoritmi" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 55m 31s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 49m 35s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 55m 42s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 50m 02s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="ArrayUtilsTest_randomArray - 2020.09.21 at 16h 57m 57s.xml">
+      <configuration name="ArrayUtilsTest.randomArray" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 50m 52s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="ArrayUtilsTest_randomArray - 2020.09.21 at 16h 57m 59s.xml">
+      <configuration name="ArrayUtilsTest.randomArray" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 50m 55s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_insert - 2020.09.21 at 16h 58m 48s.xml">
+      <configuration name="RBTreeTest.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 50m 57s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_testTree - 2020.09.21 at 16h 58m 51s.xml">
+      <configuration name="RBTreeTest.testTree" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ArrayUtilsTest_mergeSort - 2020.09.21 at 15h 50m 59s.xml">
-      <configuration name="ArrayUtilsTest.mergeSort" configurationId="JUnit" />
+    <history-entry file="RBTreeTest_testTree - 2020.09.21 at 17h 00m 01s.xml">
+      <configuration name="RBTreeTest.testTree" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,7 +474,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -483,7 +491,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.23667377" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.23667377" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -542,20 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/RBTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="152" column="31" selection-start-line="152" selection-start-column="31" selection-end-line="152" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/IBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -586,15 +580,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinaryTreeTesting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="55" column="20" lean-forward="true" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        <state relative-caret-position="204">
+          <caret line="13" selection-start-line="6" selection-start-column="4" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="209" column="5" lean-forward="true" selection-start-line="168" selection-start-column="4" selection-end-line="209" selection-end-column="5" />
+          <folding>
+            <element signature="e#1146#1152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+          <folding>
+            <element signature="e#975#981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="146" column="32" selection-start-line="146" selection-start-column="32" selection-end-line="146" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="153" column="46" lean-forward="true" selection-start-line="153" selection-start-column="46" selection-end-line="153" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/RBTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        <state relative-caret-position="34">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3299#3305#0" expanded="true" />
@@ -602,40 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTree.java">
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/RBTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="55" column="41" lean-forward="true" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/BinarySearchTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
-          <folding>
-            <element signature="e#1146#1152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchTree/AVLTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="99" column="38" selection-start-line="99" selection-start-column="38" selection-end-line="99" selection-end-column="38" />
-          <folding>
-            <element signature="e#975#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utils/ArrayUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1487">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>

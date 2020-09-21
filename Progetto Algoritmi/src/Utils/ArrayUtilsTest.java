@@ -1,6 +1,7 @@
 package Utils;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 import java.lang.reflect.Array;
 import java.util.Random;
@@ -143,6 +144,17 @@ public class ArrayUtilsTest {
 
         for (int i = 0; i < arr.length; i++) {
             Assert.assertTrue(arr[i] == copy[i]);
+        }
+    }
+
+    @Test
+    public void randomArray() {
+        int[] arr = ArrayUtils.RandomArray(1000);
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if (i != j) Assert.assertNotEquals(arr[i], arr[j]);
+            }
         }
     }
 }
